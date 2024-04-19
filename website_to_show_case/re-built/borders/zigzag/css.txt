@@ -1,0 +1,49 @@
+websites:
+https://css-generators.com/custom-borders/
+https://css-tricks.com/css-borders-using-masks/
+
+
+html{
+  <div class="box"></div>
+  <div class="bottombox"></div>
+
+}
+
+
+
+
+
+
+
+
+/*css mask conic gradiant border*/
+.box {
+  display:inline-block;
+  width:100%;
+  margin-top: 0%;
+  height:30px;
+ 
+  background:linear-gradient(135deg,#828185, #363536,#828185, #363536,#828185,#363536, #828185,#363536);
+  --m:
+  
+     
+
+   conic-gradient(from -70deg at bottom,#0000,#000 1deg 139deg,#0000 140deg) 50%/71.43px 100%;
+ 
+  -webkit-mask: var(--m);
+          mask: var(--m);
+}
+.boxbottom{
+  display:inline-block;
+  width:100%;
+  margin-top: 0%;
+  height:30px;
+  background:linear-gradient(135deg,#828185, #363536,#828185, #363536,#828185,#363536, #828185,#363536);
+  
+  --m:
+  
+    conic-gradient(from 110deg at top,#0000,#000 1deg 139deg,#0000 140deg) 50%/71.43px 100%;
+    -webkit-mask: var(--m);
+            mask: var(--m);
+  }
+ 
